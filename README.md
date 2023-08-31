@@ -1,27 +1,25 @@
-# React + TypeScript + Vite
+# Laborátorio Gerenciamento de estados
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologias usadas no projeto
 
-Currently, two official plugins are available:
+- Json-server
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  > json-server vai ser a API de vocês basta rodar `npm run database` se quiserem adicionar outros produtos basta apenas colocar no `db.json`
 
-## Expanding the ESLint configuration
+- Styled components
+  > Nesse projeto é o que vamos usar para criar componentes, se vocês acharem melhor podem substituir por outro mas não usem bibliotecas de UI, ex: material-ui, ant-design, chackra-ui
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### O que devem fazer?
 
-- Configure the top-level `parserOptions` property like this:
+O que vocês devem entregar:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- [ ] Integrar a listagem de produtos com o JSON-API
+- [ ] Criar a funcionalidade de incrementar e decrementar no button
+- [ ] Vocês devem mostrar o preço formatado, exemplo: 'R$ 20,50' ou '1.050,70'
+- [ ] No carrinho vocês devem:
+  - [ ] listar os produtos no carrinho
+  - [ ] conseguir alterar (incrementar ou decrementar) a quantidade no carrinho
+  - [ ] Exibir o total formatado
+- [ ] Um estado compartilhado para gerenciar toda a lógica do carrinho e refletir informações que precisar
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Vocês não precisam em se preocupar em finalizar a compra
